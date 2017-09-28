@@ -1,0 +1,49 @@
+<idea-plugin>
+  <id>com.lantingeee.transfer.sql</id>
+  <name>transfer-sql-idea-plugin</name>
+  <version>1.0</version>
+  <vendor email="lantingeee@gmail.com">lantingeee</vendor>
+
+  <description><![CDATA[
+      remove some special characters from clipboard<br>
+      <em>
+       In the development of MyBatis framework, sometimes need to debug SQL code,
+       usually need to copy the SQL to the clipboard, but the direct copy, the clipboard will contain
+       some special characters.
+       <p>Use this plugin will automatically remove illegal characters.</p>
+       </em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="145.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <group id="CopySql.copy" text="MVPSupport" description="MVPSupport">
+      <!--<add-to-group group-id="EditorActions" anchor="last"/>-->
+      <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="$Copy"/>
+      <action id="CpySql.CopySqlSupportAction"
+              class="com.lt.copySqlPlugin.action.CopySqlSupportAction"
+              text="Copy sql" description="copy sql and remove special characters" icon="/icons/x.png">
+      </action>
+    </group>
+
+  </actions>
+
+</idea-plugin>
