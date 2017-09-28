@@ -1,0 +1,1 @@
+# transfer-sql-idea-plugin
