@@ -35,12 +35,12 @@
 
   <actions>
     <!-- Add your actions here -->
-    <group id="CopySql.copy" text="MVPSupport" description="MVPSupport">
+    <group id="Transfer.SQL" text="transfer SQL" description="transfer sql">
       <!--<add-to-group group-id="EditorActions" anchor="last"/>-->
       <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="$Copy"/>
-      <action id="CpySql.CopySqlSupportAction"
-              class="com.lt.copySqlPlugin.action.CopySqlSupportAction"
-              text="Copy sql" description="copy sql and remove special characters" icon="/icons/x.png">
+      <action id="Transfer.CpySql.CopySqlSupportAction"
+              class="com.lt.copySqlPlugin.action.CopySqlAction"
+              text="Copy SQL" description="copy sql and remove special characters">
       </action>
     </group>
 

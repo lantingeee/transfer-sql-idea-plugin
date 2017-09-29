@@ -15,10 +15,10 @@ import java.awt.datatransfer.Transferable;
 /**
  * Created by lantingeee on 27/09/2017.
  */
-public class CopySqlSupportAction extends AnAction {
-    public CopySqlSupportAction() {
-        this.setEnabledInModalContext(true);
-    }
+public class CopySqlAction extends AnAction {
+//    public CopySqlAction() {
+//        this.setEnabledInModalContext(true);
+//    }
 
     @Override
     public void actionPerformed(AnActionEvent var1) {
