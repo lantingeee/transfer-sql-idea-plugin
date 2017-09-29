@@ -82,6 +82,8 @@ public class CopySqlSupportAction extends AnAction {
             if (i != args.length - 1) {
                 sbu.append(args[i]);
                 sbu.append(jc);
+            } else {
+                sbu.append(args[i]);
             }
         }
         return sbu.toString();
