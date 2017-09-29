@@ -38,7 +38,7 @@
     <group id="Transfer.SQL" text="transfer SQL" description="transfer sql">
       <!--<add-to-group group-id="EditorActions" anchor="last"/>-->
       <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="$Copy"/>
-      <action id="Transfer.CpySql.CopySqlSupportAction"
+      <action id="Transfer.CpySql.CopySqlAction"
               class="com.lt.copySqlPlugin.action.CopySqlAction"
               text="Copy SQL" description="copy sql and remove special characters">
       </action>
