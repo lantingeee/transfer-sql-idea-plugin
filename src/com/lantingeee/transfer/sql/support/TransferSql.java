@@ -1,6 +1,5 @@
 package com.lantingeee.transfer.sql.support;
 
-import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.StringSelection;
@@ -11,12 +10,8 @@ import java.awt.datatransfer.Transferable;
  */
 public interface TransferSql {
 
-    // get a system clipboard
-    Clipboard sysClip = Toolkit.getDefaultToolkit().getSystemClipboard();
-    // get content from clipboard
-    Transferable clipTf = sysClip.getContents(null);
 
-    static String extractFromClip() {
+    static String extractFromClip(Transferable clipTf) {
 
         String orgContent = "";
         if (clipTf != null) {
@@ -41,14 +36,14 @@ public interface TransferSql {
             if (i != args.length - 1) {
                 sbu.append(args[i]);
                 sbu.append(jc);
-            }else {
+            } else {
                 sbu.append(args[i]);
             }
         }
         return sbu.toString();
     }
 
-    static void setContent(String[] arg) {
+    static void setContent(Clipboard sysClip, String[] arg) {
         Transferable tText = new StringSelection(join(arg, '\n'));
         sysClip.setContents(tText, null);
     }
