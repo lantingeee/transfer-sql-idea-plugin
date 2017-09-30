@@ -1,4 +1,4 @@
-package com.lt.copySqlPlugin.action.support;
+package com.lantingeee.transfer.sql.support;
 
 import java.awt.*;
 import java.awt.datatransfer.Clipboard;
@@ -41,8 +41,9 @@ public interface TransferSql {
             if (i != args.length - 1) {
                 sbu.append(args[i]);
                 sbu.append(jc);
+            }else {
+                sbu.append(args[i]);
             }
-            sbu.append(args[i]);
         }
         return sbu.toString();
     }

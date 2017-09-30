@@ -1,4 +1,4 @@
-package com.lt.copySqlPlugin.action.support;
+package com.lantingeee.transfer.sql.support;
 
 /**
  * Created by lantingeee on 29/09/2017.
@@ -6,12 +6,13 @@ package com.lt.copySqlPlugin.action.support;
 public class CopySql implements TransferSql {
 
     @Override
-    public String[] operateStrings(String[] args) {
-        String newStrings[] = new String[args.length];
+    public String[] operateStrings(String[] orc) {
 
-        for (int i = 0; i < args.length; i++) {
+        String newStrings[] = new String[orc.length];
 
-            char[] lc = args[i].toCharArray();
+        for (int i = 0; i < orc.length; i++) {
+
+            char[] lc = orc[i].toCharArray();
             int index = 0;
             for (int j = 0; j < lc.length; j++) {
 
