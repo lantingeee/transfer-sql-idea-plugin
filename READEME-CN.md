@@ -35,5 +35,3 @@ https://github.com/lantingeee/transfer-sql-idea-plugin/raw/master/transfer-sql-i
 ## 支持的 IDEs
 这个插件支持的 IntelliJ-based:
 * IntelliJ 2016.1+ 
-
-## License

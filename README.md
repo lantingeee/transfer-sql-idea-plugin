@@ -38,5 +38,3 @@ The plugin can be installed on following IntelliJ-based:
 
 * IntelliJ 2016.1+ 
 
-## License
-
